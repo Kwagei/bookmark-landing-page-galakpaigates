@@ -12,6 +12,7 @@ body {
 
 h1 {
     color:rgb(52, 49, 49);
+    text-align: center;
 }
 
 .bookmarkManager {
@@ -231,7 +232,7 @@ header {
 }
 
 .addExtensionDiv {
-    margin-top: 250px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -250,11 +251,55 @@ header {
     height: 350px;
     border-radius: 12px;
     padding-top: 21px;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-left: 250px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
 }
 
 .addChromeExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addToFirefox {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: -350px;
+    margin-left: 545px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+}
+
+.addFirefoxExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addToOpera {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: -350px;
+    margin-left: 840px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+    margin-bottom: 200px;
+}
+
+.addOperaExtensionBtn {
     width: 200px;
     height: 50px;
     border: none;
