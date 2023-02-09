@@ -68,7 +68,7 @@ header {
     color: white;
     border-radius: 7px;
     font-weight: bolder;
-    box-shadow: 0px 2px 10px rgb(217, 216, 216);
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
 }
 
 .firefoxButton {
@@ -79,7 +79,8 @@ header {
     color: white;
     border-radius: 7px;
     font-weight: bolder;
-    box-shadow: 0px 2px 10px rgb(217, 216, 216);
+    margin-left: 10px;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
 }
 
 .login {
@@ -93,9 +94,9 @@ header {
     font-weight: bold;
 }
 
-.blueBox {
+.bookmarkBlueBox {
     background-color: hsl(231, 69%, 60%);
-    width: 492px;
+    width: 651px;
     text-align: right;
     height: 350px;
     border-top-left-radius: 150px;
@@ -103,6 +104,18 @@ header {
     position: absolute;
     margin-left: 800px;
     margin-top: 250px;
+}
+
+.featuresBlueBox {
+    background-color: hsl(231, 69%, 60%);
+    width: 600px;
+    text-align: right;
+    height: 320px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 140px;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 0px;
 }
 
 .featuresDiv {
@@ -116,7 +129,7 @@ header {
     align-self: center;
     width: fit-content;
     margin-left: 19%;
-    margin-bottom: 2px;
+    margin-bottom: 800px;
 }
 
 .featuresTable td {
@@ -143,4 +156,115 @@ header {
     margin-top: 25px;
     width: 300px;
     margin-left: -42px;
+}
+
+.featuresSVGDiv {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: rgb(245, 251, 251);
+    fill: solid;
+    /* border: 15px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px rgb(224, 224, 224);
+    margin-top: -175px;
+    margin-left: 70px;
+}
+
+.featuresSVG {
+    position: initial;
+    border-radius: 15px;
+}
+
+.featuresSVGHeadDiv {
+    width: 536px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(9, 20, 13);
+    opacity: 75%;
+    position: absolute;
+}
+
+.bookmarkOneClick {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-top: -675px;
+    margin-bottom: 250px;
+    margin-left: 700px;
+    text-align: left;
+    position: absolute;
+}
+
+.bookmarkOneClickTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(52, 49, 49);
+    margin-bottom: 35px;
+}
+
+.bookmarkOneClickBody {
+    color: rgb(84, 81, 81);
+    margin-top: 25px;
+}
+
+.featuresBlueBox-Div {
+    position: absolute;
+    margin-top: -610px;
+}
+
+.moreButton {
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+}
+
+.svgHead {
+    background-color:rgb(52, 49, 49);
+}
+
+.addExtensionDiv {
+    margin-top: 250px;
+    text-align: center;
+}
+
+.addExtensionH1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.addExtensionTextDiv {
+    color:hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.addToChrome {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+}
+
+.addChromeExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addExtensionAllDiv {
+    margin-top: -200px;
 }
