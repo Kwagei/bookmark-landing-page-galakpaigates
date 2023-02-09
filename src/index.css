@@ -238,7 +238,7 @@ header {
 
 .addExtensionH1 {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 21px;
 }
 
 .addExtensionTextDiv {
@@ -296,7 +296,7 @@ header {
     margin-top: -350px;
     margin-left: 840px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .addOperaExtensionBtn {
@@ -314,4 +314,38 @@ header {
     margin-top: -200px;
 }
 
-.allFAQsDiv
+.allFAQsDiv {
+    text-align: start;
+}
+
+.faqTextDiv {
+    color:hsl(229, 8%, 60%);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.faqHRows {
+    width: 650px;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    color:rgb(224, 224, 224);
+}
+
+.questionAnswersDiv {
+    color:hsl(229, 8%, 60%);
+    width: 650px;
+    margin-left: 26%;
+    align-self: center;
+}
+
+.faqMoreBtnDiv {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.downArrowSvgDiv {
+    text-align: end;
+    margin-top: -23px;
+    margin: 15px;
+}
