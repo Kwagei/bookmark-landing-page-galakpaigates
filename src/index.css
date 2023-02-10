@@ -324,7 +324,7 @@ header {
     text-align: center;
 }
 
-.faqHRows {
+#faqHRows {
     width: 650px;
     text-align: center;
     margin-top: 21px;
@@ -342,10 +342,27 @@ header {
 .faqMoreBtnDiv {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .downArrowSvgDiv {
     text-align: end;
-    margin-top: -23px;
-    margin: 15px;
+    /* margin-left: 400px; */
+    display: inline-block;
+}
+
+/* .answer1Text {
+    display: none;
+} */
+
+.answer2Text {
+    display: none;
+}
+
+.answer3Text {
+    display: none;
+}
+
+.answer4Text {
+    display: none;
 }
