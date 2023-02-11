@@ -69,6 +69,11 @@ header {
     font-weight: lighter;
 }
 
+.otherHeadContent:hover {
+    cursor: pointer;
+    color:hsl(0, 94%, 66%);
+}
+
 .chromeButton {
     width: 180px;
     height: 50px;
@@ -92,6 +97,13 @@ header {
     box-shadow: 0px 2px 15px rgb(178, 177, 177);
 }
 
+.firefoxButton:hover {
+    background-color: white;
+    color:rgb(84, 81, 81);
+    border: 2px rgb(84, 81, 81) solid;
+    cursor: pointer;
+}
+
 .login {
     background-color: hsl(0, 94%, 66%);
     border-radius: 7px;
@@ -103,10 +115,18 @@ header {
     font-weight: bold;
 }
 
+.login:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+    cursor: pointer;
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    box-shadow: 0px 2px 3px rgb(178, 177, 177);
+}
+
 .bookmarkBlueBox {
     background-color: hsl(231, 69%, 60%);
     width: 492px;
-    text-align: right;
+    text-align: end;
     height: 350px;
     border-top-left-radius: 150px;
     border-bottom-left-radius: 150px;
@@ -120,7 +140,6 @@ header {
     width: 600px;
     text-align: right;
     height: 320px;
-    border-top-right-radius: 150px;
     border-bottom-right-radius: 140px;
     position: absolute;
     margin-left: -170px;
@@ -144,6 +163,11 @@ header {
 .featuresTable td {
     padding: 40px;
     color: hsl(229, 8%, 60%);
+}
+
+.featuresTable td:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
 }
 
 .featuresUnderline {
@@ -174,7 +198,6 @@ header {
     border-radius: 15px;
     background-color: rgb(245, 251, 251);
     fill: solid;
-    /* border: 15px solid black; */
     border-radius: 15px;
     box-shadow: 0px 0px 0px rgb(224, 224, 224);
     margin-top: -175px;
@@ -232,7 +255,14 @@ header {
     color: white;
     border-radius: 7px;
     font-weight: bolder;
-    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+    box-shadow: 0px 2px 5px rgb(178, 177, 177);
+}
+
+.moreButton:hover {
+    background-color: white;
+    cursor: pointer;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
 }
 
 .svgHead {
@@ -242,6 +272,13 @@ header {
 .addExtensionDiv {
     margin-top: 20px;
     text-align: center;
+}
+
+.addExtensionDiv button:hover {
+    background-color: white;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+    cursor: pointer;
 }
 
 .addExtensionH1 {
@@ -255,12 +292,40 @@ header {
 }
 
 .addToChrome {
-    width: 250px;
-    height: 350px;
+    width: 230px;
+    height: 325px;
     border-radius: 12px;
     padding-top: 21px;
-    margin-top: 70px;
-    margin-left: 250px;
+    margin-top: 50px;
+    margin-left: 240px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+}
+
+.chromeButton {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.chromeButton:hover {
+    background-color: white;
+    cursor: pointer;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+}
+
+.addToFirefox {
+    width: 225px;
+    height: 325px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: -320px;
+    margin-left: 510px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
 }
 
@@ -275,16 +340,6 @@ header {
     box-shadow: 0px 2px 2px rgb(178, 177, 177);
 }
 
-.addToFirefox {
-    width: 250px;
-    height: 350px;
-    border-radius: 12px;
-    padding-top: 21px;
-    margin-top: -350px;
-    margin-left: 545px;
-    box-shadow: 0px 2px 7px rgb(178, 177, 177);
-}
-
 .addFirefoxExtensionBtn {
     width: 200px;
     height: 50px;
@@ -297,12 +352,12 @@ header {
 }
 
 .addToOpera {
-    width: 250px;
-    height: 350px;
+    width: 225px;
+    height: 325px;
     border-radius: 12px;
     padding-top: 21px;
-    margin-top: -350px;
-    margin-left: 840px;
+    margin-top: -310px;
+    margin-left: 770px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
     margin-bottom: 150px;
 }
@@ -347,6 +402,22 @@ header {
     align-self: center;
 }
 
+#question1DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question2DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question3DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question4DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
 .faqMoreBtnDiv {
     text-align: center;
     margin: 40px;
@@ -385,6 +456,13 @@ header {
     font-weight: bold;
 }
 
+.contactUsBtn:hover {
+    color:hsl(0, 94%, 66%);
+    background-color: white;
+    border: 2px hsl(0, 94%, 66%) solid;
+    cursor: pointer;
+}
+
 .endDiv {
     background-color: hsl(229, 31%, 21%);
     width: 101.4%;
@@ -396,22 +474,66 @@ header {
     padding-bottom: -17px;
 }
 
-.bottomBookmarkLogoSvg {
-    margin-right: 140px;
+.bottomBookmarkSvg {
+    padding-left: 120px;
+    padding-right: 90px;
     color: white;
 }
-
 .bottomFeatures {
-    margin-right: 100px;
+    padding-right: 70px;
     color: white;
+    font-size: small;
 }
 
 .bottomPricing {
-    margin-right: 100px;
+    padding-right: 70px;
     color: white;
+    font-size: small;
 }
 
 .bottomContact {
-    margin-right: 100px;
+    padding-right: 70px;
     color: white;
+    font-size: small;
+}
+
+.facebookIcon {
+    padding-left: 350px;
+}
+
+.twitterIcon {
+    padding-left: 21px;
+}
+
+.attribution {
+    font-weight: bolder;
+    background-color:rgb(84, 81, 81);
+    height: 40px;
+    margin: -9px;
+    padding-right: -10px;
+    padding-top: 7px;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 21px;
+}
+
+* a {
+    text-decoration: none;
+    font-style: none;
+}
+
+.allFooter {
+    width: 100%;
+}
+
+.bottomFeatures:hover,
+.bottomPricing:hover,
+.bottomContact:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.facebookIconSvg:hover,
+.twitterIconSvg:hover {
+    background-color:hsl(0, 94%, 66%);
 }
