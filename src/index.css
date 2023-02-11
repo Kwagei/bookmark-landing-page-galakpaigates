@@ -2,12 +2,35 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    animation-name: display;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    animation-iteration-count: 1;
+}
+
+@keyframes display {
+    0% {opacity: 0; transform: rotateY(90deg); margin-top: 1000px;}
+    100% {opacity: 1;}
+}
+
 header {
     width: 90%;
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
     font-size: 18px;
+}
+
+button:hover {
+    transform: rotateY(360deg);
+    transition-duration: 1.5s;
+}
+
+svg:hover {
+    transform: rotateY(360deg);
+    transition-duration: 2s;
 }
 
 main {
@@ -125,7 +148,7 @@ header {
 
 .bookmarkBlueBox {
     background-color: hsl(231, 69%, 60%);
-    width: 492px;
+    width: 574px;
     text-align: end;
     height: 350px;
     border-top-left-radius: 150px;
@@ -509,7 +532,8 @@ header {
     font-weight: bolder;
     background-color:rgb(84, 81, 81);
     height: 40px;
-    margin: -9px;
+    margin: -10px;
+    width: 101.4%;
     padding-right: -10px;
     padding-top: 7px;
     color: white;
