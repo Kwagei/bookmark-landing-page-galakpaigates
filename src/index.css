@@ -4,14 +4,17 @@
 
 body {
     animation-name: display;
-    animation-duration: 3.5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     transition-property: all;
     animation-iteration-count: 1;
 }
 
 @keyframes display {
-    0% {opacity: 0; transform: rotateY(90deg); margin-top: 1000px;}
+    0% {opacity: 0; transform: rotateZ(-60deg); margin-top: 1000px;}
+    25% {transform: rotateZ(45deg); opacity: 75;}
+    50% {transform: rotateZ(-30deg); opacity: 50;}
+    75% {transform: rotateZ(15deg); opacity: 25;}
     100% {opacity: 1;}
 }
 
@@ -148,7 +151,7 @@ header {
 
 .bookmarkBlueBox {
     background-color: hsl(231, 69%, 60%);
-    width: 574px;
+    width: 37%;
     text-align: end;
     height: 350px;
     border-top-left-radius: 150px;
@@ -441,6 +444,8 @@ header {
     color:hsl(0, 94%, 66%);
 }
 
+
+
 .faqMoreBtnDiv {
     text-align: center;
     margin: 40px;
@@ -548,6 +553,18 @@ header {
 
 .allFooter {
     width: 100%;
+}
+
+#answer1Text,
+#answer2Text,
+#answer3Text,
+#answer4Text {
+    animation-name: opacityTime;
+    animation-duration: 2s;
+}
+@keyframes opacityTime {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .bottomFeatures:hover,
