@@ -11,10 +11,18 @@ body {
 }
 
 @keyframes display {
-    0% {opacity: 0; transform: rotateZ(-60deg); margin-top: 1000px;}
-    25% {transform: rotateZ(45deg); opacity: 75;}
-    50% {transform: rotateZ(-30deg); opacity: 50;}
-    75% {transform: rotateZ(15deg); opacity: 25;}
+    0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 150px;}
+    100% {opacity: 1; src: "desktop-design.jpg"}
+}
+
+div {
+    animation-name: appear;
+    animation-duration: 7s;
+    transition-property: all;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {margin-top: 100px; opacity: 0;}
     100% {opacity: 1;}
 }
 
@@ -421,6 +429,10 @@ header {
     color:rgb(224, 224, 224);
 }
 
+.questionAnswersDiv:hover {
+    cursor: pointer;
+}
+
 .questionAnswersDiv {
     color:hsl(229, 8%, 60%);
     width: 650px;
@@ -443,8 +455,6 @@ header {
 #question4DownArrow:hover {
     color:hsl(0, 94%, 66%);
 }
-
-
 
 .faqMoreBtnDiv {
     text-align: center;
@@ -576,5 +586,5 @@ header {
 
 .facebookIconSvg:hover,
 .twitterIconSvg:hover {
-    background-color:hsl(0, 94%, 66%);
+    fill:hsl(0, 94%, 66%) solid;
 }
