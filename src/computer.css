@@ -116,6 +116,7 @@ header {
 .otherContentList {
     margin: -5px 0px 0px;
     float: right;
+    display: list-item;
 }
 
 .bookmarkDiv {
