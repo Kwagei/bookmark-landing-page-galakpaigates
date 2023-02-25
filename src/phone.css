@@ -10,6 +10,30 @@
     fill:hsl(0, 94%, 66%);
 }
 
+body {
+    animation-name: display;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    animation-iteration-count: 1;
+}
+
+@keyframes display {
+    0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 100px;}
+    100% {opacity: 1;}
+}
+
+div {
+    animation-name: appear;
+    animation-duration: 7s;
+    transition-property: all;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {margin-top: 70px; opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .allHeader {
     margin: 15px;
 }
@@ -46,8 +70,10 @@
     100% {opacity: 1;}
 }
 
-.otherContentList li {
-    display: table-row;
+.otherContentList {
+    position: absolute;
+    display: none;
+    z-index: 9999;
 }
 
 .login {
@@ -62,8 +88,7 @@
 }
 
 .bookmarkDiv {
-    /* display: inline-block; */
-    width: 100vw;
+    position: relative;
 }
 
 .bookmarkDiv svg {

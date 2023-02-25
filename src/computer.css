@@ -4,7 +4,7 @@
 
 body {
     animation-name: display;
-    animation-duration: 0.1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     transition-property: all;
     animation-iteration-count: 1;
@@ -17,12 +17,12 @@ body {
 
 div {
     animation-name: appear;
-    animation-duration: 0.2s;
+    animation-duration: 7s;
     transition-property: all;
     animation-fill-mode: forwards;
 }
 @keyframes appear {
-    0% {margin-top: 100px; opacity: 0;}
+    0% {margin-top: 150px; opacity: 0;}
     100% {opacity: 1;}
 }
 
@@ -215,7 +215,7 @@ header {
     margin: 0px 0px -120px;
 }
 
-.featuresBody {
+.featuresBodyText {
     font-size: normal;
     color: hsl(229, 8%, 60%);
     text-align: center;
