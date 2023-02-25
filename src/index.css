@@ -1,37 +1,33 @@
-@media all and (min-width: 1000px) {
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+* svg:hover {
+    cursor: pointer;
+    fill:hsl(0, 94%, 66%);
+}
+
+@media screen and (min-width: 750px) {
     * {
         font-family: 'Rubik', sans-serif;
     }
-
+    
     body {
         animation-name: display;
         animation-duration: 2s;
         animation-fill-mode: forwards;
         transition-property: all;
         animation-iteration-count: 1;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
     }
-
-    .container {
-        display: flex;
-    }
-
-    .bookmarkSection {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        justify-content: center;
-    }
+    
     @keyframes display {
         0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 150px;}
-        100% {opacity: 1;}
+        100% {opacity: 1; src: "desktop-design.jpg"}
     }
-
+    
     div {
         animation-name: appear;
         animation-duration: 7s;
@@ -42,7 +38,7 @@
         0% {margin-top: 100px; opacity: 0;}
         100% {opacity: 1;}
     }
-
+    
     header {
         width: 90%;
         padding-top: 40px;
@@ -50,17 +46,17 @@
         padding-right: 60px;
         font-size: 18px;
     }
-
+    
     button:hover {
         transform: rotateY(360deg);
         transition-duration: 1.5s;
     }
-
+    
     svg:hover {
         transform: rotateY(360deg);
         transition-duration: 2s;
     }
-
+    
     main {
         width: 90%;
         padding-top: 40px;
@@ -68,31 +64,32 @@
         padding-right: 60px;
         font-size: 18px;
     }
-
+    
     h1 {
         color:rgb(52, 49, 49);
         text-align: center;
     }
-
+    
     .bookmarkManager {
         width: 500px;
         height: 300px;
+        display: inline-block;
         margin-top: 150px;
         margin-bottom: 250px;
     }
-
+    
     .bookmarkManagerTitle {
         font-size: 40px;
         font-weight: bold;
         color: rgb(52, 49, 49);
         margin-bottom: 35px;
     }
-
+    
     .bookmarkManagerBody {
         color: rgb(84, 81, 81);
         margin-top: 25px;
     }
-
+    
     .bookmarkSVGs {
         width: fit-content;
         height: fit-content;
@@ -101,29 +98,29 @@
         margin-left: 600px;
         margin-top: 90px;
     }
-
+    
     .allHeader {
         text-transform: uppercase;
     }
-
+    
     header {
         font-size: medium;
     }
-
+    
     .bookmarkIcon {
         margin-right: 550px;
     }
-
+    
     .otherHeadContent {
         padding-right: 55px;
         font-weight: lighter;
     }
-
+    
     .otherHeadContent:hover {
         cursor: pointer;
         color:hsl(0, 94%, 66%);
     }
-
+    
     .chromeButton {
         width: 180px;
         height: 50px;
@@ -134,7 +131,7 @@
         font-weight: bolder;
         box-shadow: 0px 2px 15px rgb(178, 177, 177);
     }
-
+    
     .firefoxButton {
         width: 180px;
         height: 50px;
@@ -146,14 +143,14 @@
         margin-left: 10px;
         box-shadow: 0px 2px 15px rgb(178, 177, 177);
     }
-
+    
     .firefoxButton:hover {
         background-color: white;
         color:rgb(84, 81, 81);
         border: 2px rgb(84, 81, 81) solid;
         cursor: pointer;
     }
-
+    
     .login {
         background-color: hsl(0, 94%, 66%);
         border-radius: 7px;
@@ -164,7 +161,7 @@
         color: white;
         font-weight: bold;
     }
-
+    
     .login:hover {
         border: 2px solid hsl(0, 94%, 66%);
         cursor: pointer;
@@ -172,7 +169,7 @@
         color:hsl(0, 94%, 66%);
         box-shadow: 0px 2px 3px rgb(178, 177, 177);
     }
-
+    
     .bookmarkBlueBox {
         background-color: hsl(231, 69%, 60%);
         width: 37%;
@@ -184,7 +181,7 @@
         margin-left: 800px;
         margin-top: 250px;
     }
-
+    
     .featuresBlueBox {
         background-color: hsl(231, 69%, 60%);
         width: 600px;
@@ -195,34 +192,31 @@
         margin-left: -170px;
         margin-top: 0px;
     }
-
+    
     .featuresDiv {
         text-align: center;
         color: hsl(229, 8%, 60%);
         width: 100%;
         margin-bottom: 70px;
     }
-
+    
     .featuresTableDiv {
         align-self: center;
         width: fit-content;
         margin-left: 19%;
         margin-bottom: 800px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
     }
-
+    
     .featuresTable td {
         padding: 40px;
         color: hsl(229, 8%, 60%);
     }
-
+    
     .featuresTable td:hover {
         color:hsl(0, 94%, 66%);
         cursor: pointer;
     }
-
+    
     .featuresUnderline {
         margin-top: 27px;
         width: 300px;
@@ -232,7 +226,7 @@
         fill:rgb(84, 81, 81);
         background-color:rgb(84, 81, 81);
     }
-
+    
     .pinkFeaturesUnderline {
         color:hsl(0, 94%, 66%);
         height: 5px;
@@ -243,7 +237,7 @@
         width: 300px;
         margin-left: -42px;
     }
-
+    
     .featuresSVGDiv {
         position: absolute;
         width: fit-content;
@@ -256,12 +250,12 @@
         margin-top: -175px;
         margin-left: 70px;
     }
-
+    
     .featuresSVG {
         position: initial;
         border-radius: 15px;
     }
-
+    
     .featuresSVGHeadDiv {
         width: 536px;
         height: 70px;
@@ -271,7 +265,7 @@
         opacity: 75%;
         position: absolute;
     }
-
+    
     .bookmarkOneClick {
         width: 500px;
         height: 300px;
@@ -282,24 +276,24 @@
         text-align: left;
         position: absolute;
     }
-
+    
     .bookmarkOneClickTitle {
         font-size: 40px;
         font-weight: bold;
         color: rgb(52, 49, 49);
         margin-bottom: 35px;
     }
-
+    
     .bookmarkOneClickBody {
         color: rgb(84, 81, 81);
         margin-top: 25px;
     }
-
+    
     .featuresBlueBox-Div {
         position: absolute;
         margin-top: -610px;
     }
-
+    
     .moreButton {
         width: 130px;
         height: 50px;
@@ -310,40 +304,40 @@
         font-weight: bolder;
         box-shadow: 0px 2px 5px rgb(178, 177, 177);
     }
-
+    
     .moreButton:hover {
         background-color: white;
         cursor: pointer;
         color:hsl(231, 69%, 60%);
         border: 2px hsl(231, 69%, 60%) solid;
     }
-
+    
     .svgHead {
         background-color:rgb(52, 49, 49);
     }
-
+    
     .addExtensionDiv {
         margin-top: 20px;
         text-align: center;
     }
-
+    
     .addExtensionDiv button:hover {
         background-color: white;
         color:hsl(231, 69%, 60%);
         border: 2px hsl(231, 69%, 60%) solid;
         cursor: pointer;
     }
-
+    
     .addExtensionH1 {
         text-align: center;
         margin-bottom: 21px;
     }
-
+    
     .addExtensionTextDiv {
         color:hsl(229, 8%, 60%);
         text-align: center;
     }
-
+    
     .addToChrome {
         width: 230px;
         height: 325px;
@@ -353,7 +347,7 @@
         margin-left: 240px;
         box-shadow: 0px 2px 7px rgb(178, 177, 177);
     }
-
+    
     .chromeButton {
         width: 200px;
         height: 50px;
@@ -364,14 +358,14 @@
         font-weight: bolder;
         box-shadow: 0px 2px 2px rgb(178, 177, 177);
     }
-
+    
     .chromeButton:hover {
         background-color: white;
         cursor: pointer;
         color:hsl(231, 69%, 60%);
         border: 2px hsl(231, 69%, 60%) solid;
     }
-
+    
     .addToFirefox {
         width: 225px;
         height: 325px;
@@ -381,7 +375,7 @@
         margin-left: 510px;
         box-shadow: 0px 2px 7px rgb(178, 177, 177);
     }
-
+    
     .addChromeExtensionBtn {
         width: 200px;
         height: 50px;
@@ -392,7 +386,7 @@
         font-weight: bolder;
         box-shadow: 0px 2px 2px rgb(178, 177, 177);
     }
-
+    
     .addFirefoxExtensionBtn {
         width: 200px;
         height: 50px;
@@ -403,7 +397,7 @@
         font-weight: bolder;
         box-shadow: 0px 2px 2px rgb(178, 177, 177);
     }
-
+    
     .addToOpera {
         width: 225px;
         height: 325px;
@@ -414,7 +408,7 @@
         box-shadow: 0px 2px 7px rgb(178, 177, 177);
         margin-bottom: 150px;
     }
-
+    
     .addOperaExtensionBtn {
         width: 200px;
         height: 50px;
@@ -425,21 +419,21 @@
         font-weight: bolder;
         box-shadow: 0px 2px 2px rgb(178, 177, 177);
     }
-
+    
     .addExtensionAllDiv {
         margin-top: -200px;
     }
-
+    
     .allFAQsDiv {
         text-align: start;
     }
-
+    
     .faqTextDiv {
         color:hsl(229, 8%, 60%);
         margin-bottom: 70px;
         text-align: center;
     }
-
+    
     #faqHRows {
         width: 650px;
         text-align: center;
@@ -447,44 +441,44 @@
         margin-bottom: 21px;
         color:rgb(224, 224, 224);
     }
-
+    
     .questionAnswersDiv:hover {
         cursor: pointer;
     }
-
+    
     .questionAnswersDiv {
         color:hsl(229, 8%, 60%);
         width: 650px;
         margin-left: 23.5%;
         align-self: center;
     }
-
+    
     #question1DownArrow:hover {
         color:hsl(0, 94%, 66%);
     }
-
+    
     #question2DownArrow:hover {
         color:hsl(0, 94%, 66%);
     }
-
+    
     #question3DownArrow:hover {
         color:hsl(0, 94%, 66%);
     }
-
+    
     #question4DownArrow:hover {
         color:hsl(0, 94%, 66%);
     }
-
+    
     .faqMoreBtnDiv {
         text-align: center;
         margin: 40px;
     }
-
+    
     .downArrowSvgDiv {
         text-align: end;
         display: inline-block;
     }
-
+    
     .joinedDiv {
         width: 101.4%;
         height: 200px;
@@ -494,7 +488,7 @@
         color: white;
         background-color:hsl(231, 69%, 60%);
     }
-
+    
     .contactUsInput {
         border-radius: 7px;
         border: none;
@@ -503,7 +497,7 @@
         margin-right: 15px;
         color:rgb(178, 177, 177);
     }
-
+    
     .contactUsBtn {
         background-color:hsl(0, 94%, 66%);
         color: white;
@@ -512,14 +506,14 @@
         padding: 12px;
         font-weight: bold;
     }
-
+    
     .contactUsBtn:hover {
         color:hsl(0, 94%, 66%);
         background-color: white;
         border: 2px hsl(0, 94%, 66%) solid;
         cursor: pointer;
     }
-
+    
     .endDiv {
         background-color: hsl(229, 31%, 21%);
         width: 101.4%;
@@ -530,7 +524,7 @@
         color: white;
         padding-bottom: -17px;
     }
-
+    
     .bottomBookmarkSvg {
         padding-left: 120px;
         padding-right: 90px;
@@ -541,27 +535,27 @@
         color: white;
         font-size: small;
     }
-
+    
     .bottomPricing {
         padding-right: 70px;
         color: white;
         font-size: small;
     }
-
+    
     .bottomContact {
         padding-right: 70px;
         color: white;
         font-size: small;
     }
-
+    
     .facebookIcon {
         padding-left: 350px;
     }
-
+    
     .twitterIcon {
         padding-left: 21px;
     }
-
+    
     .attribution {
         font-weight: bolder;
         background-color:rgb(84, 81, 81);
@@ -574,16 +568,16 @@
         font-size: 15px;
         padding-bottom: 21px;
     }
-
+    
     * a {
         text-decoration: none;
         font-style: none;
     }
-
+    
     .allFooter {
         width: 100%;
     }
-
+    
     #answer1Text,
     #answer2Text,
     #answer3Text,
@@ -595,14 +589,14 @@
         0% {opacity: 0;}
         100% {opacity: 1;}
     }
-
+    
     .bottomFeatures:hover,
     .bottomPricing:hover,
     .bottomContact:hover {
         color:hsl(0, 94%, 66%);
         cursor: pointer;
     }
-
+    
     .facebookIconSvg:hover,
     .twitterIconSvg:hover {
         fill:hsl(0, 94%, 66%) solid;
@@ -610,606 +604,962 @@
 }
 
 @media all and (min-width: 768.9px) {
-    * {
-        font-family: 'Rubik', sans-serif;
-    }
+* {
+    font-family: 'Rubik', sans-serif;
+}
 
-    body {
-        animation-name: display;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        transition-property: all;
-    }
+body {
+    animation-name: display;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+}
 
-    .container {
-        display: flex;
-    }
+.container {
+    display: flex;
+}
 
-    @keyframes display {
-        0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 150px;}
-        100% {opacity: 1;}
-    }
+@keyframes display {
+    0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 150px;}
+    100% {opacity: 1;}
+}
 
-    div {
-        animation-name: appear;
-        animation-duration: 7s;
-        transition-property: all;
-        animation-fill-mode: forwards;
-    }
-    @keyframes appear {
-        0% {margin-top: 100px; opacity: 0;}
-        100% {opacity: 1;}
-    }
+div {
+    animation-name: appear;
+    animation-duration: 7s;
+    transition-property: all;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {margin-top: 100px; opacity: 0;}
+    100% {opacity: 1;}
+}
 
-    header {
-        width: 90%;
-        padding-top: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
-        font-size: 18px;
-    }
+header {
+    width: 90%;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
 
-    button:hover {
-        transform: rotateY(360deg);
-        transition-duration: 1.5s;
-    }
+button:hover {
+    transform: rotateY(360deg);
+    transition-duration: 1.5s;
+}
 
-    svg:hover {
-        transform: rotateY(360deg);
-        transition-duration: 2s;
-    }
+svg:hover {
+    transform: rotateY(360deg);
+    transition-duration: 2s;
+}
 
-    main {
-        width: 90%;
-        padding-top: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
-        font-size: 18px;
-    }
+main {
+    width: 90%;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
 
-    h1 {
-        color:rgb(52, 49, 49);
-        text-align: center;
-    }
+h1 {
+    color:rgb(52, 49, 49);
+    text-align: center;
+}
 
-    .bookmarkManager {
-        width: 500px;
-        height: 300px;
-        margin-top: 150px;
-        margin-bottom: 250px;
-    }
+.bookmarkManager {
+    width: 500px;
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
 
-    .bookmarkManagerTitle {
-        font-size: 40px;
-        font-weight: bold;
-        color: rgb(52, 49, 49);
-        margin-bottom: 35px;
-    }
+.bookmarkManagerTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(52, 49, 49);
+    margin-bottom: 35px;
+}
 
-    .bookmarkManagerBody {
-        color: rgb(84, 81, 81);
-        margin-top: 25px;
-    }
+.bookmarkManagerBody {
+    color: rgb(84, 81, 81);
+    margin-top: 25px;
+}
 
-    .bookmarkSVGs {
-        width: fit-content;
-        height: fit-content;
-        position: absolute;
-        align-self: right;
-        margin-left: 600px;
-        margin-top: 90px;
-    }
+.bookmarkSVGs {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    align-self: right;
+    margin-left: 600px;
+    margin-top: 90px;
+}
+
+.allHeader {
+    text-transform: uppercase;
+}
+
+header {
+    font-size: medium;
+}
+
+.bookmarkIcon {
+    margin-right: 550px;
+}
+
+.otherHeadContent {
+    padding-right: 55px;
+    font-weight: lighter;
+}
+
+.otherHeadContent:hover {
+    cursor: pointer;
+    color:hsl(0, 94%, 66%);
+}
+
+.chromeButton {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+}
+
+.firefoxButton {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: hsl(229, 8%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    margin-left: 10px;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+}
+
+.firefoxButton:hover {
+    background-color: white;
+    color:rgb(84, 81, 81);
+    border: 2px rgb(84, 81, 81) solid;
+    cursor: pointer;
+}
+
+.login {
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 7px;
+    width: 115px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.login:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+    cursor: pointer;
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    box-shadow: 0px 2px 3px rgb(178, 177, 177);
+}
+
+.bookmarkBlueBox {
+    background-color: hsl(231, 69%, 60%);
+    width: 37%;
+    text-align: end;
+    height: 350px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 250px;
+}
+
+.featuresBlueBox {
+    background-color: hsl(231, 69%, 60%);
+    width: 600px;
+    text-align: right;
+    height: 320px;
+    border-bottom-right-radius: 140px;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 0px;
+}
+
+.featuresDiv {
+    text-align: center;
+    color: hsl(229, 8%, 60%);
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.featuresTableDiv {
+    align-self: center;
+    width: fit-content;
+    margin-left: 19%;
+    margin-bottom: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.featuresTable td {
+    padding: 40px;
+    color: hsl(229, 8%, 60%);
+}
+
+.featuresTable td:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.featuresUnderline {
+    margin-top: 27px;
+    width: 300px;
+    margin-left: -42px;
+    height: 0.01px;
+    color:rgb(84, 81, 81);
+    fill:rgb(84, 81, 81);
+    background-color:rgb(84, 81, 81);
+}
+
+.pinkFeaturesUnderline {
+    color:hsl(0, 94%, 66%);
+    height: 5px;
+    background-color:hsl(0, 94%, 66%);
+    border-color:hsl(0, 94%, 66%);
+    border: none;
+    margin-top: 25px;
+    width: 300px;
+    margin-left: -42px;
+}
+
+.featuresSVGDiv {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: rgb(245, 251, 251);
+    fill: solid;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px rgb(224, 224, 224);
+    margin-top: -175px;
+    margin-left: 70px;
+}
+
+.featuresSVG {
+    position: initial;
+    border-radius: 15px;
+}
+
+.featuresSVGHeadDiv {
+    width: 536px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(9, 20, 13);
+    opacity: 75%;
+    position: absolute;
+}
+
+.bookmarkOneClick {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-top: -675px;
+    margin-bottom: 250px;
+    margin-left: 700px;
+    text-align: left;
+    position: absolute;
+}
+
+.bookmarkOneClickTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(52, 49, 49);
+    margin-bottom: 35px;
+}
+
+.bookmarkOneClickBody {
+    color: rgb(84, 81, 81);
+    margin-top: 25px;
+}
+
+.featuresBlueBox-Div {
+    position: absolute;
+    margin-top: -610px;
+}
+
+.moreButton {
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 5px rgb(178, 177, 177);
+}
+
+.moreButton:hover {
+    background-color: white;
+    cursor: pointer;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+}
+
+.svgHead {
+    background-color:rgb(52, 49, 49);
+}
+
+.addExtensionDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.addExtensionDiv button:hover {
+    background-color: white;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+    cursor: pointer;
+}
+
+.addExtensionH1 {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.addExtensionTextDiv {
+    color:hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.addToChrome {
+    width: 230px;
+    height: 325px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: 50px;
+    margin-left: 240px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+}
+
+.chromeButton {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.chromeButton:hover {
+    background-color: white;
+    cursor: pointer;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+}
+
+.addToFirefox {
+    width: 225px;
+    height: 325px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: -320px;
+    margin-left: 510px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+}
+
+.addChromeExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addFirefoxExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addToOpera {
+    width: 225px;
+    height: 325px;
+    border-radius: 12px;
+    padding-top: 21px;
+    margin-top: -310px;
+    margin-left: 770px;
+    box-shadow: 0px 2px 7px rgb(178, 177, 177);
+    margin-bottom: 150px;
+}
+
+.addOperaExtensionBtn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addExtensionAllDiv {
+    margin-top: -200px;
+}
+
+.allFAQsDiv {
+    text-align: start;
+}
+
+.faqTextDiv {
+    color:hsl(229, 8%, 60%);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#faqHRows {
+    width: 650px;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    color:rgb(224, 224, 224);
+}
+
+.questionAnswersDiv:hover {
+    cursor: pointer;
+}
+
+.questionAnswersDiv {
+    color:hsl(229, 8%, 60%);
+    width: 650px;
+    margin-left: 23.5%;
+    align-self: center;
+}
+
+#question1DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question2DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question3DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+#question4DownArrow:hover {
+    color:hsl(0, 94%, 66%);
+}
+
+.faqMoreBtnDiv {
+    text-align: center;
+    margin: 40px;
+}
+
+.downArrowSvgDiv {
+    text-align: end;
+    display: inline-block;
+}
+
+.joinedDiv {
+    width: 101.4%;
+    height: 200px;
+    margin-left: -10px;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-color:hsl(231, 69%, 60%);
+}
+
+.contactUsInput {
+    border-radius: 7px;
+    border: none;
+    padding: 12px;
+    width: 270px;
+    margin-right: 15px;
+    color:rgb(178, 177, 177);
+}
+
+.contactUsBtn {
+    background-color:hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.contactUsBtn:hover {
+    color:hsl(0, 94%, 66%);
+    background-color: white;
+    border: 2px hsl(0, 94%, 66%) solid;
+    cursor: pointer;
+}
+
+.endDiv {
+    background-color: hsl(229, 31%, 21%);
+    width: 101.4%;
+    margin-left: -10px;
+    height: 70px;
+    text-align: center;
+    padding-top: 27px;
+    color: white;
+    padding-bottom: -17px;
+}
+
+.bottomBookmarkSvg {
+    padding-left: 120px;
+    padding-right: 90px;
+    color: white;
+}
+.bottomFeatures {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.bottomPricing {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.bottomContact {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.facebookIcon {
+    padding-left: 350px;
+}
+
+.twitterIcon {
+    padding-left: 21px;
+}
+
+.attribution {
+    font-weight: bolder;
+    background-color:rgb(84, 81, 81);
+    height: 40px;
+    margin: -10px;
+    width: 101.4%;
+    padding-right: -10px;
+    padding-top: 7px;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 21px;
+}
+
+* a {
+    text-decoration: none;
+    font-style: none;
+}
+
+.allFooter {
+    width: 100%;
+}
+
+#answer1Text,
+#answer2Text,
+#answer3Text,
+#answer4Text {
+    animation-name: opacityTime;
+    animation-duration: 2s;
+}
+@keyframes opacityTime {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.bottomFeatures:hover,
+.bottomPricing:hover,
+.bottomContact:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.facebookIconSvg:hover,
+.twitterIconSvg:hover {
+    fill:hsl(0, 94%, 66%) solid;
+} 
+}
+
+
+@media screen and (min-width: 400px) {
 
     .allHeader {
+        margin: 15px;
+    }
+
+    .allHeader li {
+        display: inline-block;
+    }
+
+    .displayOtherContentSvg {
+        margin-left: 300px;
+        margin-top: -25px;
+    }
+
+    .otherContentList tr {
+        display: none;
+        float: right;
+        background-color: hsl(232, 25%, 94%);
+        box-shadow: 0px 0px 7px gray;
+        border-radius: 7px;
+        padding: 10px;
+        margin-left: 270px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 25px;
         text-transform: uppercase;
+        position: absolute;
+        animation-name: list-appear;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes list-appear {
+        0% {opacity: 0; margin-top: -25px; width: 40px;}
+        100% {opacity: 1;}
     }
 
-    header {
-        font-size: medium;
-    }
-
-    .bookmarkIcon {
-        margin-right: 550px;
-    }
-
-    .otherHeadContent {
-        padding-right: 55px;
-        font-weight: lighter;
-    }
-
-    .otherHeadContent:hover {
-        cursor: pointer;
-        color:hsl(0, 94%, 66%);
-    }
-
-    .chromeButton {
-        width: 180px;
-        height: 50px;
-        border: none;
-        background-color: hsl(231, 69%, 60%);
-        color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 15px rgb(178, 177, 177);
-    }
-
-    .firefoxButton {
-        width: 180px;
-        height: 50px;
-        border: none;
-        background-color: hsl(229, 8%, 60%);
-        color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        margin-left: 10px;
-        box-shadow: 0px 2px 15px rgb(178, 177, 177);
-    }
-
-    .firefoxButton:hover {
-        background-color: white;
-        color:rgb(84, 81, 81);
-        border: 2px rgb(84, 81, 81) solid;
-        cursor: pointer;
+    .otherContentList li {
+        display: table-row;
     }
 
     .login {
-        background-color: hsl(0, 94%, 66%);
-        border-radius: 7px;
-        width: 115px;
-        height: 40px;
         border: none;
-        text-transform: uppercase;
-        color: white;
+        border-radius: 7px;
+        padding: 7px;
+        width: 90px;
         font-weight: bold;
+        background-color: hsl(0, 94%, 66%);
+        color: white;
+        text-transform: uppercase;
     }
 
-    .login:hover {
-        border: 2px solid hsl(0, 94%, 66%);
-        cursor: pointer;
-        background-color: white;
-        color:hsl(0, 94%, 66%);
-        box-shadow: 0px 2px 3px rgb(178, 177, 177);
+    .bookmarkDiv {
+        /* display: inline-block; */
+        width: 100vw;
     }
 
-    .bookmarkBlueBox {
+    .bookmarkDiv svg {
+        color: none;
+    }
+
+    .bookmarkManagerTitle {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 1000;
+    }
+
+    .bookmarkManagerBody {
+        color: hsl(229, 8%, 60%);
+        text-align: center;
+        max-width: 400px;
+        margin: 12px 27px 12px 27px;
+    }
+
+    .bookmarkManagerButtons {
+        display: inline-block;
+        margin: 0px 10px 10px 45px;
+    }
+
+    .bookmarkManagerButtons button {
+        box-shadow: 0px 0px 15px hsl(229, 8%, 60%);
+    }
+
+    .chromeButton {
         background-color: hsl(231, 69%, 60%);
-        width: 37%;
-        text-align: end;
-        height: 350px;
-        border-top-left-radius: 150px;
-        border-bottom-left-radius: 150px;
-        position: absolute;
-        margin-left: 800px;
-        margin-top: 250px;
+        border-radius: 12px;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-weight: bolder;
+        margin-right: 12px;
     }
 
-    .featuresBlueBox {
-        background-color: hsl(231, 69%, 60%);
-        width: 600px;
-        text-align: right;
-        height: 320px;
-        border-bottom-right-radius: 140px;
-        position: absolute;
-        margin-left: -170px;
-        margin-top: 0px;
+    .firefoxButton {
+        background-color: hsl(229, 8%, 60%);
+        border-radius: 12px;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-weight: bolder;
+        margin-right: 12px;
+    }
+
+    .featuresDiv h1 {
+        text-align: center;
+        margin: 50px 0px 21px 0px;
+        color: black;
     }
 
     .featuresDiv {
         text-align: center;
-        color: hsl(229, 8%, 60%);
-        width: 100%;
-        margin-bottom: 70px;
+        margin: 0px 25px 21px 25px;
+        color:hsl(229, 8%, 60%);
+    }
+
+    .featuresDiv div {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        margin: 10px 0px 15px 0px;
     }
 
     .featuresTableDiv {
-        align-self: center;
-        width: fit-content;
-        margin-left: 19%;
-        margin-bottom: 800px;
-        display: flex;
+        color:hsl(229, 8%, 60%);
+        width: auto;
+    }
+
+    .featuresTableDiv table {
+        text-align: center;
+        margin: 0px 0px 0px 100px;
+    }
+
+    .featuresTableDiv table td:nth-child(2) {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+    }
+
+    .featuresTableDiv table td {
+        padding: 21px;
+        display: block;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .featuresTable td {
-        padding: 40px;
-        color: hsl(229, 8%, 60%);
+    .featuresBlueBox {
+        height: 250px;
+        border-bottom-right-radius: 100px;
+        width: 250px;
+        background-color:hsl(231, 69%, 60%);
+        position: none;
+        margin-top: 200px;
     }
 
-    .featuresTable td:hover {
-        color:hsl(0, 94%, 66%);
-        cursor: pointer;
-    }
-
-    .featuresUnderline {
-        margin-top: 27px;
-        width: 300px;
-        margin-left: -42px;
-        height: 0.01px;
-        color:rgb(84, 81, 81);
-        fill:rgb(84, 81, 81);
-        background-color:rgb(84, 81, 81);
-    }
-
-    .pinkFeaturesUnderline {
-        color:hsl(0, 94%, 66%);
-        height: 5px;
-        background-color:hsl(0, 94%, 66%);
-        border-color:hsl(0, 94%, 66%);
-        border: none;
-        margin-top: 25px;
-        width: 300px;
-        margin-left: -42px;
-    }
-
-    .featuresSVGDiv {
-        position: absolute;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 15px;
-        background-color: rgb(245, 251, 251);
-        fill: solid;
-        border-radius: 15px;
-        box-shadow: 0px 0px 0px rgb(224, 224, 224);
-        margin-top: -175px;
-        margin-left: 70px;
-    }
-
-    .featuresSVG {
-        position: initial;
-        border-radius: 15px;
-    }
-
-    .featuresSVGHeadDiv {
-        width: 536px;
-        height: 70px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color: rgb(9, 20, 13);
-        opacity: 75%;
-        position: absolute;
-    }
-
-    .bookmarkOneClick {
-        width: 500px;
-        height: 300px;
-        display: inline-block;
-        margin-top: -675px;
-        margin-bottom: 250px;
-        margin-left: 700px;
-        text-align: left;
+    .featuresSvgDiv svg {
+        margin-top: -400px;
         position: absolute;
     }
 
     .bookmarkOneClickTitle {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: bold;
-        color: rgb(52, 49, 49);
-        margin-bottom: 35px;
+        text-align: center;
+        margin: 40px 0px 0px;
     }
 
     .bookmarkOneClickBody {
-        color: rgb(84, 81, 81);
-        margin-top: 25px;
+        text-align: center;
+        margin: 15px 25px 21px 25px;
+        color:hsl(229, 8%, 60%);
     }
 
-    .featuresBlueBox-Div {
-        position: absolute;
-        margin-top: -610px;
-    }
-
-    .moreButton {
-        width: 130px;
-        height: 50px;
-        border: none;
+    .moreInfo {
         background-color: hsl(231, 69%, 60%);
         color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 5px rgb(178, 177, 177);
-    }
-
-    .moreButton:hover {
-        background-color: white;
-        cursor: pointer;
-        color:hsl(231, 69%, 60%);
-        border: 2px hsl(231, 69%, 60%) solid;
-    }
-
-    .svgHead {
-        background-color:rgb(52, 49, 49);
-    }
-
-    .addExtensionDiv {
-        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+        font-weight: bold;
         text-align: center;
+        margin: 0px 0px 30px 145px;
     }
 
-    .addExtensionDiv button:hover {
-        background-color: white;
-        color:hsl(231, 69%, 60%);
-        border: 2px hsl(231, 69%, 60%) solid;
-        cursor: pointer;
-    }
-
-    .addExtensionH1 {
+    .addExtensionTitle {
+        font-size: 25px;
+        font-weight: bold;
         text-align: center;
-        margin-bottom: 21px;
+        margin: 40px 0px 0px;
     }
 
     .addExtensionTextDiv {
-        color:hsl(229, 8%, 60%);
         text-align: center;
+        margin: 15px 25px 21px 25px;
+        color:hsl(229, 8%, 60%);
     }
 
     .addToChrome {
-        width: 230px;
-        height: 325px;
-        border-radius: 12px;
-        padding-top: 21px;
-        margin-top: 50px;
-        margin-left: 240px;
-        box-shadow: 0px 2px 7px rgb(178, 177, 177);
+        box-shadow: 0px 0px 7px #b1b1b1;
+        width: 200px;
+        height: 250px;
+        padding: 21px 12px 21px 12px;
+        text-align: center;
+        border-radius: 15px;
+        float: right;
+        margin-right: 21%;
     }
 
-    .chromeButton {
-        width: 200px;
-        height: 50px;
-        border: none;
+    .addToChrome button {
         background-color: hsl(231, 69%, 60%);
         color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 2px rgb(178, 177, 177);
-    }
-
-    .chromeButton:hover {
-        background-color: white;
-        cursor: pointer;
-        color:hsl(231, 69%, 60%);
-        border: 2px hsl(231, 69%, 60%) solid;
-    }
-
-    .addToFirefox {
-        width: 225px;
-        height: 325px;
-        border-radius: 12px;
-        padding-top: 21px;
-        margin-top: -320px;
-        margin-left: 510px;
-        box-shadow: 0px 2px 7px rgb(178, 177, 177);
-    }
-
-    .addChromeExtensionBtn {
-        width: 200px;
+        border: none;
+        border-radius: 10px;
         height: 50px;
-        border: none;
-        background-color: hsl(231, 69%, 60%);
-        color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 2px rgb(178, 177, 177);
-    }
-
-    .addFirefoxExtensionBtn {
         width: 200px;
-        height: 50px;
-        border: none;
-        background-color: hsl(231, 69%, 60%);
-        color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 2px rgb(178, 177, 177);
-    }
-
-    .addToOpera {
-        width: 225px;
-        height: 325px;
-        border-radius: 12px;
-        padding-top: 21px;
-        margin-top: -310px;
-        margin-left: 770px;
-        box-shadow: 0px 2px 7px rgb(178, 177, 177);
-        margin-bottom: 150px;
-    }
-
-    .addOperaExtensionBtn {
-        width: 200px;
-        height: 50px;
-        border: none;
-        background-color: hsl(231, 69%, 60%);
-        color: white;
-        border-radius: 7px;
-        font-weight: bolder;
-        box-shadow: 0px 2px 2px rgb(178, 177, 177);
-    }
-
-    .addExtensionAllDiv {
-        margin-top: -200px;
-    }
-
-    .allFAQsDiv {
-        text-align: start;
-    }
-
-    .faqTextDiv {
-        color:hsl(229, 8%, 60%);
-        margin-bottom: 70px;
-        text-align: center;
-    }
-
-    #faqHRows {
-        width: 650px;
-        text-align: center;
-        margin-top: 21px;
-        margin-bottom: 21px;
-        color:rgb(224, 224, 224);
-    }
-
-    .questionAnswersDiv:hover {
-        cursor: pointer;
-    }
-
-    .questionAnswersDiv {
-        color:hsl(229, 8%, 60%);
-        width: 650px;
-        margin-left: 23.5%;
-        align-self: center;
-    }
-
-    #question1DownArrow:hover {
-        color:hsl(0, 94%, 66%);
-    }
-
-    #question2DownArrow:hover {
-        color:hsl(0, 94%, 66%);
-    }
-
-    #question3DownArrow:hover {
-        color:hsl(0, 94%, 66%);
-    }
-
-    #question4DownArrow:hover {
-        color:hsl(0, 94%, 66%);
-    }
-
-    .faqMoreBtnDiv {
-        text-align: center;
-        margin: 40px;
-    }
-
-    .downArrowSvgDiv {
-        text-align: end;
-        display: inline-block;
-    }
-
-    .joinedDiv {
-        width: 101.4%;
-        height: 200px;
-        margin-left: -10px;
-        padding-top: 50px;
-        text-align: center;
-        color: white;
-        background-color:hsl(231, 69%, 60%);
-    }
-
-    .contactUsInput {
-        border-radius: 7px;
-        border: none;
-        padding: 12px;
-        width: 270px;
-        margin-right: 15px;
-        color:rgb(178, 177, 177);
-    }
-
-    .contactUsBtn {
-        background-color:hsl(0, 94%, 66%);
-        color: white;
-        border-radius: 7px;
-        border: none;
-        padding: 12px;
         font-weight: bold;
     }
 
-    .contactUsBtn:hover {
-        color:hsl(0, 94%, 66%);
-        background-color: white;
-        border: 2px hsl(0, 94%, 66%) solid;
-        cursor: pointer;
-    }
-
-    .endDiv {
-        background-color: hsl(229, 31%, 21%);
-        width: 101.4%;
-        margin-left: -10px;
-        height: 70px;
+    .addToFirefox {
+        box-shadow: 0px 0px 7px #b1b1b1;
+        width: 200px;
+        height: 250px;
+        padding: 21px 12px 21px 12px;
         text-align: center;
-        padding-top: 27px;
+        border-radius: 15px;
+        float: right;
+        margin: 30px 21%;
+    }
+
+    .addToFirefox button {
+        background-color: hsl(231, 69%, 60%);
         color: white;
-        padding-bottom: -17px;
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        width: 200px;
+        font-weight: bold;
     }
 
-    .bottomBookmarkSvg {
-        padding-left: 120px;
-        padding-right: 90px;
+    .addToOpera {
+        box-shadow: 0px 0px 7px #b1b1b1;
+        width: 200px;
+        height: 250px;
+        padding: 21px 12px 21px 12px;
+        text-align: center;
+        border-radius: 15px;
+        float: right;
+        margin: 0.01px 21% 100px;
+    }
+
+    .addToOpera button {
+        background-color: hsl(231, 69%, 60%);
         color: white;
-    }
-    .bottomFeatures {
-        padding-right: 70px;
-        color: white;
-        font-size: small;
-    }
-
-    .bottomPricing {
-        padding-right: 70px;
-        color: white;
-        font-size: small;
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        width: 200px;
+        font-weight: bold;
     }
 
-    .bottomContact {
-        padding-right: 70px;
-        color: white;
-        font-size: small;
+    .FAQ {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin: 40px 0px 0px 21%;
+        max-width: 250px;
     }
 
-    .facebookIcon {
-        padding-left: 350px;
+    .faqTextDiv {
+        text-align: center;
+        margin: 15px 25px 21px 25px;
+        color:hsl(229, 8%, 60%);
     }
 
-    .twitterIcon {
-        padding-left: 21px;
+    .downArrowSvgDiv {
+        float: right;
     }
 
-    .attribution {
-        font-weight: bolder;
-        background-color:rgb(84, 81, 81);
-        height: 40px;
-        margin: -10px;
-        width: 101.4%;
-        padding-right: -10px;
-        padding-top: 7px;
-        color: white;
-        font-size: 15px;
-        padding-bottom: 21px;
-    }
-
-    * a {
-        text-decoration: none;
-        font-style: none;
-    }
-
-    .allFooter {
-        width: 100%;
-    }
-
+    #question1DownArrow,
+    #question2DownArrow,
+    #question3DownArrow,
+    #question4DownArrow,
     #answer1Text,
     #answer2Text,
     #answer3Text,
     #answer4Text {
-        animation-name: opacityTime;
-        animation-duration: 2s;
+        padding: 12px 10px 12px 5px;
+        color:hsl(229, 8%, 60%);
+        width: 370px;
+        margin-left: 7px;
+        border-bottom:hsl(229, 8%, 60%) 1px solid;
     }
-    @keyframes opacityTime {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+
+    .allFooter {
+        background-color:hsl(231, 69%, 60%);
+        width: auto;
+        color: white;
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .joinedDiv input {
+        margin: 21px 17%;
+        width: 250px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        color:hsl(229, 8%, 60%);
+    }
+
+    .joinedDiv button {
+        border: none;
+        height: 40px;
+        width: 270px;
+        margin: -10px 17%;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+        background-color:hsl(0, 94%, 66%);
+        font-weight: bold;
+    }
+
+    .bottomHeader td {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 15px;
+        text-align: center;
+        
+    }
+
+    .endDiv {
+        background-color: hsl(229, 31%, 21%);
+        margin: 40px 0px -45px;
+    }
+
+    .bottomBookmarkSvg {
+        padding-left: 110px;
+    }
+
+    .bottomFeatures,
+    .bottomPricing,
+    .bottomContact {
+        margin-left: 40px;
     }
 
     .bottomFeatures:hover,
     .bottomPricing:hover,
     .bottomContact:hover {
-        color:hsl(0, 94%, 66%);
+        color: hsl(0, 94%, 66%);
         cursor: pointer;
     }
 
-    .facebookIconSvg:hover,
-    .twitterIconSvg:hover {
-        fill:hsl(0, 94%, 66%) solid;
+    .socialMediaIcons {
+        width: auto;
     }
-}
 
-@media all and (min-width: 400.9px) {
-    body {
-        display: flex;
-        flex-wrap: column;
+    footer {
+        display: none;
     }
 }

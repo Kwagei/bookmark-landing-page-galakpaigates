@@ -1,0 +1,376 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+* svg:hover {
+    cursor: pointer;
+    fill:hsl(0, 94%, 66%);
+}
+
+.allHeader {
+    margin: 15px;
+}
+
+.allHeader li {
+    display: inline-block;
+}
+
+.displayOtherContentSvg {
+    margin-left: 300px;
+    margin-top: -25px;
+}
+
+.otherContentList tr {
+    display: none;
+    float: right;
+    background-color: hsl(232, 25%, 94%);
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    animation-name: list-appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes list-appear {
+    0% {opacity: 0; margin-top: -25px; width: 40px;}
+    100% {opacity: 1;}
+}
+
+.otherContentList li {
+    display: table-row;
+}
+
+.login {
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    width: 90px;
+    font-weight: bold;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    text-transform: uppercase;
+}
+
+.bookmarkDiv {
+    /* display: inline-block; */
+    width: 100vw;
+}
+
+.bookmarkDiv svg {
+    color: none;
+}
+
+.bookmarkManagerTitle {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.bookmarkManagerBody {
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+    max-width: 400px;
+    margin: 12px 27px 12px 27px;
+}
+
+.bookmarkManagerButtons {
+    display: inline-block;
+    margin: 0px 10px 10px 45px;
+}
+
+.bookmarkManagerButtons button {
+    box-shadow: 0px 0px 15px hsl(229, 8%, 60%);
+}
+
+.chromeButton {
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 12px;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bolder;
+    margin-right: 12px;
+}
+
+.firefoxButton {
+    background-color: hsl(229, 8%, 60%);
+    border-radius: 12px;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bolder;
+    margin-right: 12px;
+}
+
+.featuresDiv h1 {
+    text-align: center;
+    margin: 50px 0px 21px 0px;
+    color: black;
+}
+
+.featuresDiv {
+    text-align: center;
+    margin: 0px 25px 21px 25px;
+    color:hsl(229, 8%, 60%);
+}
+
+.featuresTitle {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0px 15px 0px;
+}
+
+.featuresBodyText {
+    color: hsl(229, 8%, 60%);
+    font-size: normal;
+}
+
+.featuresTableDiv {
+    color:hsl(229, 8%, 60%);
+    width: auto;
+}
+
+.featuresTableDiv table {
+    text-align: center;
+    margin: 0px 0px 0px 100px;
+}
+
+.featuresTableDiv table td:hover {
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+.featuresTableDiv table td {
+    padding: 21px;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.featuresBlueBox {
+    height: 250px;
+    border-bottom-right-radius: 100px;
+    width: 250px;
+    background-color:hsl(231, 69%, 60%);
+    position: none;
+    margin-top: 200px;
+}
+
+.featuresSvgDiv svg {
+    margin-top: -400px;
+    position: absolute;
+}
+
+.bookmarkOneClickTitle {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 0px;
+}
+
+.bookmarkOneClickBody {
+    text-align: center;
+    margin: 15px 25px 21px 25px;
+    color:hsl(229, 8%, 60%);
+}
+
+.moreInfo {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0px 30px 145px;
+}
+
+.addExtensionTitle {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 0px;
+}
+
+.addExtensionTextDiv {
+    text-align: center;
+    margin: 15px 25px 21px 25px;
+    color:hsl(229, 8%, 60%);
+}
+
+.addToChrome {
+    box-shadow: 0px 0px 7px #b1b1b1;
+    width: 200px;
+    height: 250px;
+    padding: 21px 12px 21px 12px;
+    text-align: center;
+    border-radius: 15px;
+    float: right;
+    margin-right: 21%;
+}
+
+.addToChrome button {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.addToFirefox {
+    box-shadow: 0px 0px 7px #b1b1b1;
+    width: 200px;
+    height: 250px;
+    padding: 21px 12px 21px 12px;
+    text-align: center;
+    border-radius: 15px;
+    float: right;
+    margin: 30px 21%;
+}
+
+.addToFirefox button {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.addToOpera {
+    box-shadow: 0px 0px 7px #b1b1b1;
+    width: 200px;
+    height: 250px;
+    padding: 21px 12px 21px 12px;
+    text-align: center;
+    border-radius: 15px;
+    float: right;
+    margin: 0.01px 21% 100px;
+}
+
+.addToOpera button {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.FAQ {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 0px 21%;
+    max-width: 250px;
+}
+
+.faqTextDiv {
+    text-align: center;
+    margin: 15px 25px 21px 25px;
+    color:hsl(229, 8%, 60%);
+}
+
+.downArrowSvgDiv {
+    float: right;
+}
+
+#question1DownArrow,
+#question2DownArrow,
+#question3DownArrow,
+#question4DownArrow,
+#answer1Text,
+#answer2Text,
+#answer3Text,
+#answer4Text {
+    padding: 12px 10px 12px 5px;
+    color:hsl(229, 8%, 60%);
+    width: 370px;
+    margin-left: 7px;
+    border-bottom:hsl(229, 8%, 60%) 1px solid;
+}
+
+.allFooter {
+    background-color:hsl(231, 69%, 60%);
+    width: auto;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.joinedDiv input {
+    margin: 21px 17%;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color:hsl(229, 8%, 60%);
+}
+
+.joinedDiv button {
+    border: none;
+    height: 40px;
+    width: 270px;
+    margin: -10px 17%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    background-color:hsl(0, 94%, 66%);
+    font-weight: bold;
+}
+
+.bottomHeader td {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 15px;
+    text-align: center;
+    
+}
+
+.endDiv {
+    background-color: hsl(229, 31%, 21%);
+    margin: 40px 0px -45px;
+}
+
+.bottomBookmarkSvg {
+    padding-left: 110px;
+}
+
+.bottomFeatures,
+.bottomPricing,
+.bottomContact {
+    margin-left: 40px;
+}
+
+.bottomFeatures:hover,
+.bottomPricing:hover,
+.bottomContact:hover {
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.socialMediaIcons {
+    width: auto;
+}
+
+footer {
+    display: none;
+}
