@@ -1,5 +1,7 @@
 * {
     font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
     outline: none;
 }
 
@@ -46,7 +48,6 @@ svg:hover {
 }
 
 main {
-    width: 90%;
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
@@ -61,9 +62,9 @@ h1 {
 .bookmarkManager {
     width: 500px;
     height: 300px;
-    margin-top: -350px;
-    float: left;
-    margin-bottom: 250px;
+    margin: 0px 0px 250px 100px;
+    display: block;
+    text-align: center;
 }
 
 .bookmarkManagerTitle {
@@ -83,12 +84,57 @@ h1 {
     height: fit-content;
     position: absolute;
     align-self: right;
-    margin-left: 600px;
+    margin-left: 300px;
     margin-top: 90px;
 }
 
 .displayOtherContentSvg {
+    float: right;
+    margin: -21px 21px 0px 630px;
+}
+
+.displayOtherContentSvg:hover {
+    cursor: pointer;
+}
+
+.otherContentList tr {
+    float: right;
+    background-color: hsl(232, 25%, 94%);
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    animation-name: list-appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes list-appear {
+    0% {opacity: 0; margin-top: -25px; width: 40px;}
+    100% {opacity: 1;}
+}
+
+.otherContentList {
+    position: absolute;
     display: none;
+    z-index: 9999;
+    text-align: center;
+}
+
+.login {
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    width: 90px;
+    font-weight: bold;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    text-transform: uppercase;
 }
 
 .allHeader {
@@ -100,13 +146,11 @@ header {
 }
 
 .bookmarkIcon {
-    margin-right: 550px;
     float: left;
 }
 
 .otherHeadContent {
-    padding-right: 55px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .otherHeadContent:hover {
@@ -115,14 +159,14 @@ header {
 }
 
 .otherContentList {
-    margin: -5px 0px 0px;
+    margin: 21px 0px 0px 300px;
     float: right;
-    display: list-item;
+    display: none;
     list-style-type: none;
 }
 
 .bookmarkDiv {
-    margin: 80px 0px 0px 580px;
+    margin: 80px 0px 0px 21px;
 }
 
 .chromeButton {
@@ -182,34 +226,21 @@ header {
 }
 
 .bookmarkBlueBox {
-    background-color: hsl(231, 69%, 60%);
-    width: 37%;
-    text-align: end;
-    height: 350px;
-    border-bottom-left-radius: 150px;
-    position: absolute;
-    margin-left: 800px;
-    margin-top: 250px;
+    display: none;
 }
 
 .featuresBlueBox {
-    background-color: hsl(231, 69%, 60%);
-    width: 600px;
-    text-align: right;
-    height: 320px;
-    border-bottom-right-radius: 140px;
-    position: absolute;
-    margin-left: -170px;
-    margin-top: 0px;
+    display: none;
 }
 
 .featuresDiv {
     margin: 150px 0px;
+    text-align: center;
 }
 
 .featuresTableDiv {
     width: fit-content;
-    margin: -100px 0px 800px 250px;
+    margin: -100px 0px 800px 0px;
 }
 
 .featuresTitle {
@@ -240,7 +271,7 @@ header {
 .featuresSvg {
     position: absolute;
     border-radius: 5px;
-    margin: -740px 0px;
+    margin: -740px 0px 70px 70px;
     width: 600px;
     box-shadow: 0px 0px 40px gray;
 }
@@ -249,11 +280,10 @@ header {
     width: 500px;
     height: 300px;
     display: inline-block;
-    margin-top: -675px;
+    margin-top: -300px;
     margin-bottom: 250px;
-    margin-left: 700px;
-    text-align: left;
-    position: absolute;
+    margin-left: 100px;
+    text-align: center;
 }
 
 .bookmarkOneClickTitle {
@@ -296,7 +326,7 @@ header {
 }
 
 .addExtensionDiv {
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 70px;
     text-align: center;
 }
 
@@ -323,7 +353,7 @@ header {
     border-radius: 12px;
     padding-top: 21px;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: -100px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
 }
 
@@ -354,7 +384,7 @@ header {
     border-radius: 12px;
     padding-top: 21px;
     margin-top: -320px;
-    margin-left: 490px;
+    margin-left: 165px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
 }
 
@@ -364,7 +394,7 @@ header {
     border-radius: 12px;
     padding-top: 21px;
     margin-top: -310px;
-    margin-left: 770px;
+    margin-left: 420px;
     box-shadow: 0px 2px 7px rgb(178, 177, 177);
     margin-bottom: 150px;
 }
@@ -400,15 +430,14 @@ header {
 #answer4Text {
     padding: 12px 10px 12px 5px;
     color:hsl(229, 8%, 60%);
-    width: 470px;
-    margin-left: 350px;
+    width: 400px;
+    margin-left: 160px;
     border-bottom:hsl(229, 8%, 60%) 1px solid;
-    list-style-type: none;
 }
 
 .faqMoreBtnDiv {
     text-align: center;
-    margin: 40px 0px 40px;
+    margin: 150px 0px 40px;
 }
 
 .downArrowSvgDiv {
@@ -416,10 +445,10 @@ header {
 }
 
 .joinedDiv {
-    width: 101.4%;
+    width: auto;
     height: 200px;
-    margin-left: -10px;
     padding-top: 50px;
+    margin: -10px;
     text-align: center;
     color: white;
     background-color:hsl(231, 69%, 60%);
@@ -452,20 +481,21 @@ header {
 
 .endDiv {
     background-color: hsl(229, 31%, 21%);
-    width: 101.4%;
-    margin-left: -10px;
-    height: 70px;
+    width: auto;
+    height: 60px;
     text-align: center;
     padding-top: 27px;
     color: white;
     padding-bottom: -17px;
+    margin: -10px;
 }
 
 .bottomBookmarkSvg {
-    padding-left: 120px;
+    padding-left: 10px;
     padding-right: 90px;
     color: white;
 }
+
 .bottomFeatures {
     padding-right: 70px;
     color: white;
@@ -484,12 +514,8 @@ header {
     font-size: small;
 }
 
-.facebookIcon {
-    padding-left: 350px;
-}
-
-.twitterIcon {
-    padding-left: 21px;
+.socialMediaIcons {
+    padding-left: 40px;
 }
 
 .attribution {
@@ -497,12 +523,11 @@ header {
     background-color:rgb(84, 81, 81);
     height: 40px;
     margin: -10px;
-    width: 101.4%;
     padding-right: -10px;
     padding-top: 7px;
     color: white;
-    font-size: 15px;
-    padding-bottom: 21px;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 * a {
@@ -511,7 +536,7 @@ header {
 }
 
 .allFooter {
-    width: 100%;
+    width: auto;
 }
 
 #answer1Text,
@@ -531,9 +556,4 @@ header {
 .bottomContact:hover {
     color:hsl(0, 94%, 66%);
     cursor: pointer;
-}
-
-.facebookIconSvg:hover,
-.twitterIconSvg:hover {
-    fill:hsl(0, 94%, 66%) solid;
 }

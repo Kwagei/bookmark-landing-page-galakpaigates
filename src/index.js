@@ -48,10 +48,4 @@ document.addEventListener("DOMContentLoaded", function openClose(){
         document.querySelector(".otherContentList").style.display = "none"
       }
     }
-
-    var linkArea = document.querySelector('.linkArea');
-    
-    if (window.innerWidth > "400.1px") {
-      html('head').innerHTML == "<link rel='stylesheet' href='./src/computer.js'>"
-    }
   });
