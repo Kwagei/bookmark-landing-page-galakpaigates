@@ -1,0 +1,545 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    animation-name: display;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    animation-iteration-count: 1;
+}
+ 
+@keyframes display {
+    0% {opacity: 0; transform: rotateZ(-90deg); margin-top: 150px;}
+    100% {opacity: 1;}
+}
+
+div {
+    animation-name: appear;
+    animation-duration: 7s;
+    transition-property: all;
+    animation-fill-mode: forwards;
+    transition: 1.5s;
+}
+@keyframes appear {
+    0% {margin-top: 150px; opacity: 0;}
+    100% {opacity: 1;}
+}
+
+header {
+    width: 90%;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: rotateY(360deg);
+    transition-duration: 0.8s;
+}
+
+svg:hover {
+    transform: rotateY(360deg);
+    transition-duration: 2s;
+}
+
+main {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
+
+h1 {
+    color:rgb(52, 49, 49);
+    text-align: center;
+}
+
+.bookmarkManager {
+    width: 500px;
+    height: 300px;
+    margin: 0px 0px 100px 100px;
+    display: block;
+    text-align: center;
+}
+
+.bookmarkManagerTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(52, 49, 49);
+    margin-bottom: 35px;
+}
+
+.bookmarkManagerBody {
+    color: rgb(84, 81, 81);
+    margin-top: 25px;
+}
+
+.displayOtherContentSvg {
+    float: right;
+    margin: -21px 21px 0px 630px;
+}
+
+.displayOtherContentSvg:hover {
+    cursor: pointer;
+}
+
+.otherContentList tr {
+    float: right;
+    background-color: hsl(232, 25%, 94%);
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 21px;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    animation-name: list-appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes list-appear {
+    0% {opacity: 0; margin-top: -25px; width: 40px;}
+    100% {opacity: 1;}
+}
+
+.otherContentList {
+    position: absolute;
+    display: none;
+    z-index: 9999;
+    text-align: center;
+}
+
+.login {
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    width: 90px;
+    font-weight: bold;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    text-transform: uppercase;
+}
+
+.allHeader {
+    text-transform: uppercase;
+}
+
+header {
+    font-size: medium;
+}
+
+.bookmarkIcon {
+    float: left;
+}
+
+.otherHeadContent {
+    font-weight: normal;
+}
+
+.otherHeadContent:hover {
+    cursor: pointer;
+    color:hsl(0, 94%, 66%);
+}
+
+.otherContentList {
+    margin: 21px 0px 0px 300px;
+    float: right;
+    display: none;
+    list-style-type: none;
+}
+
+.bookmarkDiv {
+    margin: 80px 0px 0px 21px;
+}
+
+.bookmarkSvg {
+    margin-left: 25px;
+}
+
+.chromeButton {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+}
+
+.firefoxButton {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: hsl(229, 8%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    margin-left: 10px;
+    box-shadow: 0px 2px 15px rgb(178, 177, 177);
+}
+
+.chromeButton:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+    cursor: pointer;
+}
+
+.firefoxButton:hover {
+    background-color: white;
+    color:rgb(84, 81, 81);
+    border: 2px rgb(84, 81, 81) solid;
+    cursor: pointer;
+}
+
+.login {
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 7px;
+    width: 115px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.login:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+    cursor: pointer;
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    box-shadow: 0px 2px 3px rgb(178, 177, 177);
+}
+
+.bookmarkBlueBox {
+    display: none;
+}
+
+.featuresBlueBox {
+    display: none;
+}
+
+.featuresDiv {
+    margin: 150px 0px;
+    text-align: center;
+}
+
+.featuresTableDiv {
+    width: fit-content;
+    margin: -100px 0px 800px 0px;
+}
+
+.featuresTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0px 0px -120px;
+}
+
+.featuresBodyText {
+    font-size: normal;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+    display: block;
+    margin: 150px 0px 10px 0px;
+}
+
+.featuresTable td {
+    padding: 40px;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.featuresTable td:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+    border-bottom:hsl(0, 94%, 66%) 2px solid;
+}
+
+.featuresSvg {
+    position: absolute;
+    border-radius: 5px;
+    margin: -740px 0px 70px 70px;
+    width: 600px;
+}
+
+.bookmarkOneClick {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-top: -300px;
+    margin-bottom: 250px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.bookmarkOneClickTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(52, 49, 49);
+    margin-bottom: 35px;
+}
+
+.bookmarkOneClickBody {
+    color: rgb(84, 81, 81);
+    margin-top: 25px;
+}
+
+.featuresBlueBox-Div {
+    position: absolute;
+    margin-top: -610px;
+}
+
+.moreInfo {
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    box-shadow: 0px 2px 5px rgb(178, 177, 177);
+}
+
+.moreInfo:hover {
+    background-color: white;
+    cursor: pointer;
+    color:hsl(231, 69%, 60%);
+    border: 2px hsl(231, 69%, 60%) solid;
+}
+
+.svgHead {
+    background-color:rgb(52, 49, 49);
+}
+
+.addExtensionDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: auto;
+    margin: 40px 0px 70px -3%;
+}
+
+.addExtensionDiv div {
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px darkgray;
+    padding: 15px;
+    height: 270px;
+}
+
+.addToChrome {
+    margin: 0px 15px 15px 15px;
+}
+
+.addToFirefox {
+    margin: 40px 15px 15px 15px;
+}
+
+.addToOpera {
+    margin: 80px 15px 15px 15px;
+}
+
+.addExtensionH1 {
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.addExtensionTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.addExtensionTextDiv {
+    color:hsl(229, 8%, 60%);
+    text-align: center;
+}
+
+.addToChrome button,
+.addToFirefox button,
+.addToOpera button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+    margin-top: 10px;
+    box-shadow: 0px 2px 2px rgb(178, 177, 177);
+}
+
+.addToChrome button:hover,
+.addToFirefox button:hover,
+.addToOpera button:hover {
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%); 
+}
+
+.addExtensionAllDiv {
+    margin-top: -200px;
+}
+
+.allFAQsDiv {
+    text-align: start;
+}
+
+.FAQ {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faqTextDiv {
+    color:hsl(229, 8%, 60%);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#question1DownArrow,
+#question2DownArrow,
+#question3DownArrow,
+#question4DownArrow,
+#answer1Text,
+#answer2Text,
+#answer3Text,
+#answer4Text {
+    padding: 12px 10px 12px 5px;
+    color:hsl(229, 8%, 60%);
+    width: 400px;
+    margin: auto;
+    border-bottom:hsl(229, 8%, 60%) 1px solid;
+    animation-name: showAnswer;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    list-style-type: none;
+}
+@keyframes showAnswer {
+    0% {transform:translateY(-60px); opacity: 0;}
+    70% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+
+.faqMoreBtnDiv {
+    text-align: center;
+    margin: 150px 0px 40px;
+}
+
+.downArrowSvgDiv {
+    float: right;
+}
+
+.joinedDiv {
+    width: auto;
+    height: 200px;
+    padding-top: 50px;
+    margin: -10px;
+    text-align: center;
+    color: white;
+    background-color:hsl(231, 69%, 60%);
+}
+
+.contactUsInput {
+    border-radius: 7px;
+    border: none;
+    padding: 12px;
+    width: 270px;
+    margin-right: 15px;
+    color:rgb(178, 177, 177);
+}
+
+.contactUsBtn {
+    background-color:hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.contactUsBtn:hover {
+    color:hsl(0, 94%, 66%);
+    background-color: white;
+    border: 2px hsl(0, 94%, 66%) solid;
+    cursor: pointer;
+}
+
+.endDiv {
+    background-color: hsl(229, 31%, 21%);
+    width: auto;
+    height: 60px;
+    text-align: center;
+    padding-top: 27px;
+    color: white;
+    padding-bottom: -17px;
+    margin: -10px;
+}
+
+.bottomBookmarkSvg {
+    padding-left: 30px;
+    padding-right: 90px;
+    color: white;
+}
+
+.bottomFeatures {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.bottomPricing {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.bottomContact {
+    padding-right: 70px;
+    color: white;
+    font-size: small;
+}
+
+.socialMediaIcons {
+    padding-left: 40px;
+}
+
+.attribution {
+    font-weight: bolder;
+    background-color:rgb(84, 81, 81);
+    height: 40px;
+    margin: -10px;
+    padding-right: -10px;
+    padding-top: 7px;
+    color: white;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+* a {
+    text-decoration: none;
+    font-style: none;
+}
+
+.allFooter {
+    width: auto;
+}
+
+.bottomFeatures:hover,
+.bottomPricing:hover,
+.bottomContact:hover {
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+}
