@@ -78,13 +78,9 @@ h1 {
     margin-top: 25px;
 }
 
-.bookmarkSVGs {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    align-self: right;
-    margin-left: 600px;
-    margin-top: 90px;
+.bookmarkSvg {
+    width: 700px;
+    margin: 100px 0px 0px 580px;
 }
 
 .displayOtherContentSvg {
@@ -242,8 +238,6 @@ header {
     border-radius: 5px;
     margin: -740px 0px;
     width: 600px;
-    z-index: 9999;
-    box-shadow: 0px 0px 40px gray;
 }
 
 .bookmarkOneClick {
@@ -404,7 +398,15 @@ header {
     width: 470px;
     margin-left: 350px;
     border-bottom:hsl(229, 8%, 60%) 1px solid;
+    animation-name: showAnswer;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
     list-style-type: none;
+}
+@keyframes showAnswer {
+    0% {transform:translateY(-60px); opacity: 0;}
+    70% {opacity: 0.2;}
+    100% {opacity: 1;}
 }
 
 .faqMoreBtnDiv {
@@ -464,7 +466,7 @@ header {
 
 .bottomBookmarkSvg {
     padding-left: 120px;
-    padding-right: 90px;
+    padding-right: 500px;
     color: white;
 }
 .bottomFeatures {
@@ -513,18 +515,6 @@ header {
 
 .allFooter {
     width: 100%;
-}
-
-#answer1Text,
-#answer2Text,
-#answer3Text,
-#answer4Text {
-    animation-name: opacityTime;
-    animation-duration: 2s;
-}
-@keyframes opacityTime {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
 }
 
 .bottomFeatures:hover,

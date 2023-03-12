@@ -53,16 +53,18 @@ div {
     box-shadow: 0px 0px 7px gray;
     border-radius: 7px;
     padding: 10px;
-    margin-left: 270px;
+    margin-left: 240px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 7px;
     flex-direction: column;
-    line-height: 25px;
+    line-height: 27px;
     text-transform: uppercase;
     position: absolute;
     animation-name: list-appear;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    text-align: center;
 }
 @keyframes list-appear {
     0% {opacity: 0; margin-top: -25px; width: 40px;}
@@ -86,22 +88,28 @@ div {
     text-transform: uppercase;
 }
 
-.bookmarkSvgBlueBoxDiv {
-    display: none;
+.bookmarkSvg {
+    width: 350px;
+    border-radius: 3px;
+    position: absolute;
+    margin: 30px 0px 0px 25px;
+    display: inline-block;
 }
 
-.bookmarkDiv {
-    position: relative;
-}
-
-.bookmarkDiv svg {
-    color: none;
+.bookmarkBlueBox {
+    width: 300px;
+    float: right;
+    margin: 70px 0px 70px 0px;
+    height: 200px;
+    border-bottom-left-radius: 40px;
+    background-color: hsl(231, 69%, 60%);
 }
 
 .bookmarkManagerTitle {
     font-size: 25px;
     text-align: center;
     font-weight: 1000;
+    display: inline-block;
 }
 
 .bookmarkManagerBody {
@@ -127,7 +135,7 @@ div {
     padding: 12px;
     color: white;
     font-weight: bolder;
-    margin-right: 12px;
+    margin: 12px 12px 0px -12px;
 }
 
 .firefoxButton {
@@ -137,7 +145,7 @@ div {
     padding: 12px;
     color: white;
     font-weight: bolder;
-    margin-right: 12px;
+    margin: 12px 0px 0px 12px;
 }
 
 .featuresDiv h1 {
@@ -152,12 +160,11 @@ div {
     color:hsl(229, 8%, 60%);
 }
 
-.bookmarkSvgBlueBoxDiv {
-    display: none;
-}
-
-.featuresSvgBlueBoxDiv {
-    display: none;
+.featuresSvg {
+    width: 320px;
+    border-radius: 3px;
+    margin: -320px 0px 0px 35px;
+    position: absolute;
 }
 
 .featuresTitle {
@@ -179,11 +186,11 @@ div {
 
 .featuresTableDiv table {
     text-align: center;
-    margin: 0px 0px 0px 100px;
+    margin: 0px 0px -70px 100px;
 }
 
 .featuresTableDiv table td:hover {
-    border-bottom: 5px solid hsl(0, 94%, 66%);
+    border-bottom: 2.5px solid hsl(0, 94%, 66%);
     color: hsl(0, 94%, 66%);
 }
 
@@ -195,17 +202,11 @@ div {
 }
 
 .featuresBlueBox {
-    height: 250px;
+    height: 200px;
     border-bottom-right-radius: 100px;
-    width: 250px;
+    width: 320px;
     background-color:hsl(231, 69%, 60%);
-    position: none;
-    margin-top: 200px;
-}
-
-.featuresSvgDiv svg {
-    margin-top: -400px;
-    position: absolute;
+    margin: 200px 0px 70px 0px;
 }
 
 .bookmarkOneClickTitle {
@@ -337,9 +338,18 @@ div {
 #answer4Text {
     padding: 12px 10px 12px 5px;
     color:hsl(229, 8%, 60%);
-    width: 370px;
+    width: 350px;
     margin-left: 7px;
     border-bottom:hsl(229, 8%, 60%) 1px solid;
+    animation-name: showAnswer;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    list-style-type: none;
+}
+@keyframes showAnswer {
+    0% {transform:translateY(-60px); opacity: 0;}
+    70% {opacity: 0.2;}
+    100% {opacity: 1;}
 }
 
 .allFooter {
@@ -387,13 +397,13 @@ div {
 }
 
 .bottomBookmarkSvg {
-    padding-left: 110px;
+    padding-left: 90px;
 }
 
 .bottomFeatures,
 .bottomPricing,
 .bottomContact {
-    margin-left: 40px;
+    padding-left: 85px;
 }
 
 .bottomFeatures:hover,
@@ -405,6 +415,7 @@ div {
 
 .socialMediaIcons {
     width: auto;
+    padding-left: 85px;
 }
 
 footer {
