@@ -429,7 +429,7 @@ header {
     padding: 12px 10px 12px 5px;
     color:hsl(229, 8%, 60%);
     width: 400px;
-    margin-left: 160px;
+    margin: auto;
     border-bottom:hsl(229, 8%, 60%) 1px solid;
     animation-name: showAnswer;
     animation-duration: 0.8s;
